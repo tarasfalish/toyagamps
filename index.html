@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Toyagamaps</title>
+
+  <!-- Font dari Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Aplikasi utama: header + 4 halaman. Isinya diisi oleh script.js -->
+  <div id="app" class="shell" hidden>
+    <header class="top">
+      <div class="brand">
+        <div class="mark" id="mark"></div>
+        <span>toyaga<em>maps</em></span>
+      </div>
+      <nav class="tabs" id="tabs" aria-label="Navigasi utama"></nav>
+      <div class="theme" id="theme" role="group" aria-label="Tampilan"></div>
+    </header>
+
+    <main>
+      <section class="view" id="v-home"></section>
+      <section class="view" id="v-map" hidden></section>
+      <section class="view" id="v-stats" hidden></section>
+      <section class="view" id="v-set" hidden></section>
+    </main>
+  </div>
+
+  <!-- Jendela "Tambah minum" dan pesan singkat -->
+  <div id="sheet" class="sheet-wrap" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
